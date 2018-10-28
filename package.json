@@ -1,11 +1,71 @@
 {
   "name": "bee-build-tools",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "version": "0.0.1",
+  "description": "tools for js and react",
+  "keywords": [
+    "react",
+    "tools"
+  ],
+  "homepage": "https://github.com/uso51984/bee-build-tools",
+  "author": {
+    "name": "usocjb@163.com"
   },
-  "author": "edmund chen",
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:uso51984/bee-build-tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/uso51984/bee-build-tools/issues"
+  },
+  "license": "MIT",
+  "bin": {
+    "bee-tools": "./bin/tools.js",
+    "bee-tools-run": "./bin/tools-run.js"
+  },
+  "scripts": {
+    "postinstall": "node lib/init.js",
+    "pub": "rm -rf yarn.lock && git push origin && npm publish",
+    "checkDep": "node scripts/checkDep",
+    "lint": "eslint --ext .js,.jsx lib",
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "**/*.js": "eslint --ext .js"
+  },
+  "dependencies": {
+    "autoprefixer": "^6.x",
+    "babel-core": "^6.5.2",
+    "babel-eslint": "^8.2.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-add-module-exports": "^0.1.2",
+    "babel-plugin-transform-es3-member-expression-literals": "^6.22.0",
+    "babel-plugin-transform-es3-property-literals": "^6.22.0",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-plugin-transform-runtime": "6.x",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "colorful": "2.x",
+    "commander": "2.8.x",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-babel-minify": "^0.2.0",
+    "gulp-less": "^3.5.0",
+    "gulp-postcss": "^6.1.0",
+    "gulp-watch": "^4.3.10",
+    "less": "^2.7.2",
+    "merge2": "~1.0.2",
+    "minimist": "1.x",
+    "postcss-loader": "^1.2.2",
+    "shelljs": "0.3.x",
+    "through2": "^0.6.5"
+  },
+  "devDependencies": {
+    "lint-staged": "^7.0.2",
+    "pre-commit": "1.x"
+  },
+  "pre-commit": [
+    "checkDep",
+    "lint-staged"
+  ]
 }
