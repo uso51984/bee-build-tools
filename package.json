@@ -111,6 +111,7 @@
     "typescript": "2.x",
     "url-loader": "^0.5.9",
     "webpack": "^3.6.0",
+    "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10",
     "xtemplate": "^4.4.2",
     "xtpl": "^3.2.0"
