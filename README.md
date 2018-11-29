@@ -1,6 +1,12 @@
 ## bee-build-tools
 集成webpack bable eslint webpack-dev-server工具及依赖
 
+## 安装
+
+```
+npm i --save-dev bee-build-tools
+```
+
 ### webpack-dev-server 使用
 ##### 引用配置
 ```
