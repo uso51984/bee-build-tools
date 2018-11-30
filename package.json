@@ -1,6 +1,6 @@
 {
   "name": "bee-build-tools",
-  "version": "0.0.6",
+  "version": "0.0.9",
   "description": "tools for js and react",
   "keywords": [
     "react",
@@ -24,13 +24,7 @@
   },
   "scripts": {
     "postinstall": "node lib/init.js",
-    "pub": "rm -rf yarn.lock && git push origin && npm publish",
-    "checkDep": "node scripts/checkDep",
-    "lint": "eslint --ext .js,.jsx lib",
-    "lint-staged": "lint-staged"
-  },
-  "lint-staged": {
-    "**/*.js": "eslint --ext .js"
+    "pub": "rm -rf yarn.lock && git push origin && npm publish"
   },
   "dependencies": {
     "autoprefixer": "^6.x",
@@ -50,9 +44,6 @@
     "commander": "2.8.x",
     "console-polyfill": "~0.2.1",
     "css-loader": "^0.26.1",
-    "es5-shim": "4.x",
-    "es6-promise": "~3.2.1",
-    "es6-shim": "^0.35.3",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
@@ -60,8 +51,6 @@
     "eslint-plugin-import": "^2.10.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
-    "extract-text-webpack-plugin": "^3.0.0",
-    "fastclick": "~1.0.6",
     "file-loader": "^0.10.0",
     "filesize": "^3.5.10",
     "fs-extra": "^0.16.5",
@@ -70,25 +59,11 @@
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
     "gulp-babel-minify": "^0.2.0",
-    "gulp-jsx2example": "^1.2.4",
     "gulp-less": "3.x",
-    "gulp-plugin-prettier": "^1.1.0",
     "gulp-postcss": "^6.1.0",
-    "gulp-typescript": "~3.0.2",
     "gulp-watch": "^4.3.10",
     "gzip-size": "^3.0.0",
     "html-webpack-plugin": "^3.2.0",
-    "html5shiv": "3.x",
-    "internal-ip": "^1.1.0",
-    "koa": "^1.1.2",
-    "koa-body": "^1.4.0",
-    "koa-favicon": "^1.2.0",
-    "koa-logger": "1.x",
-    "koa-request": "~1.0.0",
-    "koa-router": "3.x",
-    "koa-serve-index": "^1.1.1",
-    "koa-static": "^2.0.0",
-    "koa-webpack-dev-middleware": "^1.1.0",
     "less": "^2.7.2",
     "less-loader": "^4.0.5",
     "match-require": "2.x",
@@ -102,22 +77,14 @@
     "progress-bar-webpack-plugin": "^1.9.3",
     "raw-loader": "^0.5.1",
     "recursive-readdir": "^2.2.1",
-    "request": "^2.81.0",
     "shelljs": "0.3.x",
     "strip-ansi": "^4.0.0",
     "style-loader": "^0.18.2",
     "svg-sprite-loader": "^3.2.5",
-    "tar.gz": "^1.0.5",
     "through2": "^0.6.5",
-    "ts-loader": "3.x",
-    "tslint": "4.x",
-    "typescript": "2.x",
-    "uglifyjs-webpack-plugin": "^2.0.1",
     "url-loader": "^0.5.9",
     "webpack": "^4.12.0",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.4",
-    "xtemplate": "^4.4.2",
-    "xtpl": "^3.2.0"
+    "webpack-dev-server": "^3.1.4"
   }
 }
