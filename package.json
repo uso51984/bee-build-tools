@@ -75,6 +75,7 @@
     "postcss-loader": "^2.0.9",
     "prettier": "^1.11.1",
     "progress-bar-webpack-plugin": "^1.9.3",
+    "raw-loader": "^0.5.1",
     "recursive-readdir": "^2.2.1",
     "shelljs": "0.3.x",
     "strip-ansi": "^4.0.0",
