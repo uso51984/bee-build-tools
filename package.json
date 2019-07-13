@@ -24,7 +24,7 @@
   },
   "scripts": {
     "postinstall": "node lib/init.js",
-    "pub": "rm -rf yarn.lock && git push origin && npm publish"
+    "checkDep": "node scripts/checkDep"
   },
   "dependencies": {
     "autoprefixer": "^6.x",
