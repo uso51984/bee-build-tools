@@ -26,7 +26,7 @@
     "postinstall": "node lib/init.js",
     "checkDep": "node scripts/checkDep"
   },
-  "peerDependencies": {
+  "dependencies": {
     "autoprefixer": "^6.x",
     "babel-core": "^6.5.2",
     "babel-eslint": "^8.2.0",
