@@ -53,7 +53,7 @@
     "eslint-plugin-import": "^2.10.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
-    "file-loader": "^4.2.0",
+    "file-loader": "^3.0.1",
     "filesize": "^3.5.10",
     "fs-extra": "^0.16.5",
     "gh-pages": "^0.3.0",
